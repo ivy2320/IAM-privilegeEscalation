@@ -8,7 +8,7 @@ of least-privilege design and common privilege escalation patterns.
 ## Why this project
 
 Most IAM misconfigurations aren't exotic — they come from convenience-driven
-permission grants that nobody scoped down. This project recreates six
+permission grants that nobody scoped down. This project recreates 7
 distinct root causes of AWS privilege escalation inside a small simulated
 organization, attacks each one from the compromised user's own limited
 credentials, and documents detection + remediation for each.
