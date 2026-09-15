@@ -34,7 +34,7 @@ aws iam create-policy-version --policy-arn arn:aws:iam::<ACCOUNT_ID>:policy/qa-t
 }
 ```
 
-![QA-a self-escalation command output](../poc-ss/Screenshot 2026-09-15 001812.png)
+![QA-a self-escalation command output](../poc-ss/qa-a-attack-command1.png)
 
 3. Verified independently via admin account:
 
@@ -42,7 +42,7 @@ aws iam get-policy --policy-arn arn:aws:iam::<ACCOUNT_ID>:policy/qa-testing-P --
 
 Confirmed `DefaultVersionId: "v2"` — the escalation is live account-wide.
 
-![Verified via admin account](../poc-ss/Scrreenshot 2026-09-15 001735.png)
+![Verified via admin account](../poc-ss/qa-a-attack-command2.png)
 
 ## Impact
 qa-a, originally scoped to view-only S3/EC2 access, now has unrestricted
