@@ -93,7 +93,6 @@ evidence from the log:
   `CreatePolicyVersion`/`SetDefaultPolicyVersion`/`AttachUserPolicy` call
   from a non-admin principal)
 
-![CloudTrail detection of QA-a escalation](../poc-ss/qa-a-cloudtrail-detection.png)
 
 ## Remediation
 Scope `iam:CreatePolicyVersion`'s Resource to exclude policies attached to
