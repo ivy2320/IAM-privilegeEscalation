@@ -39,7 +39,7 @@ credentials, and documents detection + remediation for each.
 > fully documented (attack → detection → remediation) for QA tester IAM user . Remaining IAM users in progress. 
 
 
-See [`attack-simulations/`](./attack-simulations) for detailed PoC writeups
+See [`attack-simulations/`](./attack-sim) for detailed PoC writeups
 of each vulnerability, including exact commands and output.
 
 
