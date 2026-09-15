@@ -37,13 +37,7 @@ credentials, and documents detection + remediation for each.
 ## Status
 > **Status:** Actively developed. 1 of 5 planned vulnerability scenarios
 > fully documented (attack → detection → remediation) for QA tester IAM user . Remaining IAM users in progress. 
-| # | Vulnerability | Attack | Detection | Fix |
-|---|---|---|---|---|
-| 1 | qa-a self-escalation | ✅ Complete |✅ Complete  | ✅ Complete  |
-| 2 | ex-helpdesk version rollback | ⬜ Pending | ⬜ Pending | ⬜ Pending |
-| 3 | external contractor self-grant | ⬜ Pending | ⬜ Pending | ⬜ Pending |
-| 4 | automator-r trust policy | ⬜ Pending | ⬜ Pending | ⬜ Pending |
-| 5 | dev-w PassRole confused deputy | ⬜ Pending | ⬜ Pending | ⬜ Pending |
+
 
 See [`attack-simulations/`](./attack-simulations) for detailed PoC writeups
 of each vulnerability, including exact commands and output.
