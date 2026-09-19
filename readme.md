@@ -36,7 +36,7 @@ credentials, and documents detection + remediation for each.
 
 ## Status
 > **Status:** Actively developed. 2 of 5 planned vulnerability scenarios
-> fully documented (attack → detection → remediation) for QA tester IAM user . Remaining IAM users in progress. 
+> fully documented (attack → detection → remediation) for QA tester and automator IAM user . Remaining IAM users in progress. 
 
 
 See [`attack-simulations/`](./attack-sim) for detailed PoC writeups
