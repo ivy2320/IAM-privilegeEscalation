@@ -35,7 +35,7 @@ credentials, and documents detection + remediation for each.
    attack, and confirm it now fails
 
 ## Status
-> **Status:** Actively developed. 1 of 5 planned vulnerability scenarios
+> **Status:** Actively developed. 2 of 5 planned vulnerability scenarios
 > fully documented (attack → detection → remediation) for QA tester IAM user . Remaining IAM users in progress. 
 
 
