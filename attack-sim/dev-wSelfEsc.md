@@ -73,7 +73,7 @@ type output.json
 {"statusCode": 200, "body": "Escalation complete — dev-w now has AdministratorAccess"}
 ```
 
-![Lambda invocation result](../poc-ss/dev-w-lambda-invoke.png)
+![Lambda invocation result](../poc-ss/dev-w.png)
 
 **6. Verify escalation independently via admin account:**
 
@@ -89,7 +89,7 @@ type output.json
 }
 ```
 
-![AdministratorAccess confirmed on dev-w](../poc-ss/dev-w-admin-confirmed.png)
+![AdministratorAccess confirmed on dev-w](../poc-ss/dev-w2.png)
 
 ## Impact
 `dev-w`, a scoped Lambda deployment user with no IAM management permissions
@@ -120,7 +120,7 @@ this back to `dev-w`, an investigator must find the `CreateFunction` event
 and correlate it to the `AttachUserPolicy` event via the shared function name
 `escalation-test`.
 
-![CloudTrail AttachUserPolicy event](../poc-ss/dev-w-cloudtrail.png)
+![CloudTrail AttachUserPolicy event](../poc-ss/dev-wCloudtrail.png)
 
 ## Remediation
 Scope `iam:PassRole`'s `Resource` to only the specific legitimate execution
