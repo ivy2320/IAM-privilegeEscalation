@@ -69,25 +69,15 @@ aws lambda invoke --function-name escalation-test --profile dev-w --region ap-so
 type output.json
 
 **Result:**
-```json
-{"statusCode": 200, "body": "Escalation complete — dev-w now has AdministratorAccess"}
-```
+
+
 
 ![Lambda invocation result](../poc-ss/dev-w.png)
 
 **6. Verify escalation independently via admin account:**
 
 **Result:**
-```json
-{
-    "AttachedPolicies": [
-        {
-            "PolicyName": "AdministratorAccess",
-            "PolicyArn": "arn:aws:iam::aws:policy/AdministratorAccess"
-        }
-    ]
-}
-```
+
 
 ![AdministratorAccess confirmed on dev-w](../poc-ss/dev-w2.png)
 
