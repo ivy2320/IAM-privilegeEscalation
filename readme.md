@@ -8,7 +8,7 @@ of least-privilege design and common privilege escalation patterns.
 ## Why this project
 
 Most IAM misconfigurations aren't exotic — they come from convenience-driven
-permission grants that nobody scoped down. This project recreates 7
+permission grants that nobody scoped down. This project recreates 5
 distinct root causes of AWS privilege escalation inside a small simulated
 organization, attacks each one from the compromised user's own limited
 credentials, and documents detection + remediation for each.
@@ -35,8 +35,8 @@ credentials, and documents detection + remediation for each.
    attack, and confirm it now fails
 
 ## Status
-> **Status:** Actively developed. 1 of 5 planned vulnerability scenarios
-> fully documented (attack → detection → remediation) for QA tester IAM user . Remaining IAM users in progress. 
+> **Status:** Actively developed. 2 of 5 planned vulnerability scenarios
+> fully documented (attack → detection → remediation) for QA tester and automator IAM user . Remaining IAM users in progress. 
 
 
 See [`attack-simulations/`](./attack-sim) for detailed PoC writeups
